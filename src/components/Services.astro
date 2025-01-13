@@ -24,12 +24,14 @@ const services = [
 <div class="bg-neutral-light py-24" id="SERVICIOS">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-extrabold text-accent">Nuestros Servicios</h2>
-      <p class="mt-4 text-lg text-neutral-dark">Descubre nuestras soluciones diseñadas para satisfacer tus necesidades de almacenamiento, transporte y más.</p>
+      <h2 class="text-3xl font-extrabold text-accent" data-aos="fade-up" data-aos-easing="linear"
+      data-aos-duration="1500">Nuestros Servicios</h2>
+      <p class="mt-4 text-lg text-neutral-dark" data-aos="fade-up" data-aos-easing="linear"
+      data-aos-duration="1500">Descubre nuestras soluciones diseñadas para satisfacer tus necesidades de almacenamiento, transporte y más.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {services.map(service => (
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-duration="1500">
           <img src={service.icon} alt={service.title} class="w-16 h-16 mx-auto mb-4" />
           <h3 class="text-xl font-bold text-accent mb-2">{service.title}</h3>
           <p class="text-neutral-dark mb-4">{service.description}</p>
